@@ -1,5 +1,7 @@
 h1{color:#8B5041;} 
 
-a {border: 5px solid #8B5041;}
-a {padding: 5px;}
-a {background:beige}
+a {
+    border: 5px solid #8B5041;
+    padding: 5px;
+    background:beige
+}
