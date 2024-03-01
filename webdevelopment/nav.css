@@ -1,0 +1,23 @@
+.nav {
+    background-color: #834d3f;
+    padding: 10px;
+    text-align: right;
+}
+
+li {
+    display: inline; 
+}
+
+li > a {
+    margin: 5px;
+    padding: 3px;
+    background-color: beige;
+    list-style-type: none;
+    color: #834d3f;
+    text-decoration: none;
+    border: 5px solid #834d3f;
+}
+
+li > a:hover {
+    color: #bc8775;
+}
