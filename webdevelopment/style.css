@@ -1,8 +1,51 @@
 h1{color:#8B5041;} 
 
 .resume {
+    text-decoration: none;
     border: 5px solid #8B5041;
     padding: 5px;
     background:beige;
     color: #8b5041;
+}
+
+.resume:hover {
+    background-color:tan;
+}
+
+body {
+    background-color: #e8a48d62;
+    font-family: Book Antiqua;
+}
+
+h2 {
+    color:#00010D;
+    font-family: Book Antiqua;
+}
+
+h3 {
+    color:#00010D;
+    font-style: italic;
+}
+
+.stmt {
+    color:#00010D;
+    text-align: left;
+}
+
+.stmt .p1::first-letter {
+    font-size: 50px;
+    font-family: Brush Script MT;
+}
+
+.stmt .p1 {
+    text-indent: 0%;
+}
+
+.stmt p {
+    text-indent: 5%;
+}
+
+footer {
+    text-align: center;
+    font-family: Book Antiqua;
 }
