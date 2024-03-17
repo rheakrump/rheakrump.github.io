@@ -13,8 +13,17 @@ h1{color:#8B5041;}
 }
 
 body {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
     background-color: #e8a48d62;
     font-family: Book Antiqua;
+}
+
+.paragraphs {
+    margin: 1%;
+    
 }
 
 h2 {
@@ -42,10 +51,61 @@ h3 {
 }
 
 .stmt p {
-    text-indent: 5%;
+    text-indent: 2%;
+}
+
+.copywright {
+    font-family: Book Antiqua;
+    align-self: center;
+}
+
+
+
+/*grid to resize on devices*/
+
+
+/*example template to copy*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 20fr 1fr;
+    grid-gap: 10px;
+    height: 720px;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1/2;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2/3;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 3/4;
+}
+
+
+blockquote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
-    text-align: center;
-    font-family: Book Antiqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
 }
+

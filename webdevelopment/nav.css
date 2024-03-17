@@ -1,6 +1,6 @@
 
 /*navigation bar position and color*/
-.nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 3px;
@@ -8,13 +8,13 @@
     text-align:right;
 }
 
-.nav li {
+nav li {
     position:relative;
     display:inline-block;
 }
 
 /*select all list items (nav and dropdown) and all "a" factors in there*/
-.nav li a {
+nav li a {
     display:block;
     text-decoration: none;
     margin: 10px;
@@ -25,7 +25,7 @@
 }
 
 /*makes all info in "a" tan when hovered over*/
-.nav a:hover {
+nav a:hover {
     background: tan;
 }
 
@@ -37,7 +37,7 @@
 }
 
 /*displays dropdown and aligns dropdown text*/
-.nav li:hover .dropdown {
+nav li:hover .dropdown {
     display:block;
     text-align: center;
 }
