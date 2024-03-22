@@ -55,8 +55,6 @@ nav li:hover .dropdown {
 
 
 
-
-
 /***********hamburger menu********************/
 @media screen and (max-width: 872px) {
 
@@ -98,7 +96,7 @@ nav:hover .dropdown {
 
 /*select all list items (nav and dropdown) and all "a" factors in there*/
 nav li a {
-    display:none;
+    display:block;
     text-decoration: none;
     margin: 2px 2px 2px 2px;
     padding: 10px;
