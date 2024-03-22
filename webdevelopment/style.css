@@ -61,10 +61,7 @@ h3 {
 
 
 
-/*grid to resize on devices*/
-
-
-/*example template to copy*/
+/*about page grid layout*/
 
 .wrapper {
     display: grid;
@@ -109,3 +106,11 @@ footer {
     justify-content: center;
 }
 
+/*responsive css for mobile navigation*/
+
+@media screen and (max-width: 563px) {
+    body {
+        margin: 10px;
+        font-size: 28px;
+    }
+}

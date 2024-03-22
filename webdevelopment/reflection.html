@@ -20,28 +20,41 @@ Tested: 2/9/2024
 
 -->
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1">
                <title>Artistic Statement</title>
+
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
-
+    <!--CSS GRID CONTAINER-->
+<div class="wrapper">
     <nav>
         <div class="nav">
+        <label id="hamburger">&#9776</label>
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#projects.html">Projects</a>
-                <ul class="dropdown">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html">Artistic Statement</a></li>
-            <li><a href="#contact.html">Contact</a></li>
-        </ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="project.html">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reflection.html">Reflections</a>
+                </li>
+                <li class="lastMobile">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 <div class="content">
@@ -87,10 +100,11 @@ Tested: 2/9/2024
 
 
 
-    <footer>
+    <footer id="copywright">
         Rhéa Krumpelman     
         &nbsp;&nbsp;rgkkhh@umsystem.edu     
         &nbsp;&nbsp;Copyright 2024, RK. All rights reserved.
     </footer>
+</div> 
 </body>
 </html>

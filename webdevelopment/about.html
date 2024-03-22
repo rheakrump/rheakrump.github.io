@@ -13,6 +13,7 @@
     
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
        <title>About Me</title>
     
        <link rel="stylesheet" href="style.css">
@@ -25,19 +26,31 @@
 
             
             <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#projects.html">Projects</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                <div class="nav">
+                <label id="hamburger">&#9776</label>
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="project.html">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Link 1</a></li>
+                                <li><a href="#">Link 2</a></li>
+                                <li><a href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="reflection.html">Reflections</a>
+                        </li>
+                        <li class="lastMobile">
+                            <a href="contact.html">Contact</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="reflection.html">Artistic Statement</a></li>
-                <li><a href="#contact.html">Contact</a></li>
-                </ul>
+                </div>
             </nav>
            
         
@@ -87,14 +100,12 @@
                     <strong>G.K. Chesterton</strong>
                 </blockquote>
 
-                <footer class="copywright">
-                    <p>
+                <footer id="copywright">
                         Rhéa Krumpelman     
                         &nbsp;&nbsp;rgkkhh@umsystem.edu     
                         &nbsp;&nbsp;Copyright 2024, RK. All rights reserved.
-                    </p>
                 </footer>
             
-    
+        </div>
     </body>
 </html>
