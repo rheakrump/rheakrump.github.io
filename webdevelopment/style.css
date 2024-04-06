@@ -68,12 +68,18 @@ p {
 #copywright {
     font-family: Book Antiqua;
     align-self: center;
+    color: #fffced;
 }
 
 .icon {
     display: block;
     height: 16px;
     width: 16px;
+}
+
+.icon:hover {
+    height: 24px;
+    width: 24px;
 }
 
 footer {
@@ -113,7 +119,11 @@ main {
     grid-row: 3/4;
 }
 
-
+video {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3/4;
+}
 #quote {
     grid-column-start: 1;
     grid-column-end: 3;
