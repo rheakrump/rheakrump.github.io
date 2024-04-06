@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+
+
 h1{color:#8B5041;} 
 
 .resume {
@@ -16,7 +22,6 @@ body {
     display: flex;
     flex-flow: column;
     background-color: #e8a48d62;
-    font-family: Book Antiqua;
 }
 
 
@@ -28,6 +33,11 @@ h2 {
 h3 {
     color:#00010D;
     font-style: italic;
+    font-family: Book Antiqua;
+}
+
+p {
+    font-family: Roboto;
 }
 
 .stmt {
@@ -125,6 +135,9 @@ footer {
         font-size: 2em;
     }
 
+nav {
+    display: none;
+}
 
 #author {
     display: flex;
@@ -142,7 +155,22 @@ footer {
 }
 
 #copywright {
-    font-size: 8px;
+    font-size: 14px;
 }
 
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+    }
+
+    nav {
+        display: none;
+    }
+
+    @page {
+        margin: 1in;
+    }
 }
