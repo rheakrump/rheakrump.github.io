@@ -8,12 +8,35 @@ h3 {
     color: #8b5041;
 }
 
+/*expandable text sections*/
+
+
+input {
+    display:none;
+}
+
+.projectTitle {
+    display:block;
+    position: relative;
+    text-decoration: none;
+    font-style: italic;
+    font-size: larger;
+    border: 3px solid #8B5041;
+    padding: 5px;
+    color: black;
+}
+
+
+
+
+/*project link formatting*/
 #VODlink {
     text-decoration: none;
     border: 5px solid #8B5041;
     padding: 5px;
     background:beige;
     color: #8b5041;
+    margin-bottom: 10px;
 }
 
 #VODlink:hover {
@@ -26,6 +49,7 @@ h3 {
     padding: 5px;
     background:beige;
     color: #8b5041;
+    margin-bottom: 10px;
 }
 
 #Motherlink:hover {
@@ -38,6 +62,7 @@ h3 {
     padding: 5px;
     background:beige;
     color: #8b5041;
+    margin-bottom: 10px;
 }
 
 #Summerlink:hover {
@@ -45,16 +70,20 @@ h3 {
 }
 
 
+/*image formatting*/
 #VODpic {
     width: 200px;
+    padding: 20px;
 }
 
 #Giannapic {
     width: 200px;
+    padding: 20px;
 }
 
 #Summerpic {
     width: 200px;
+    padding: 20px;
 }
 
 
@@ -82,7 +111,17 @@ header {
     grid-row: 2/3;
 }
 
-/*VOD positioning*/
+main {
+    grid-column: 2/3;
+    grid-row: 3/6;
+}
+
+#media {
+    grid-column: 1/2;
+    grid-row: 3/6;
+}
+
+/*
 #VODinfo {
     grid-column: 2/3;
     grid-row: 3/4;
@@ -93,7 +132,7 @@ header {
     grid-row: 3/4;
 }
 
-/*Mother's Prayer positioning*/
+
 #Motherinfo {
     grid-column: 2/3;
     grid-row: 4/5;
@@ -104,7 +143,7 @@ header {
     grid-row: 4/5;
 }
 
-/*Summmer fun package positioning*/
+
 #Summerinfo {
     grid-column: 2/3;
     grid-row: 5/6;
@@ -114,6 +153,7 @@ header {
     grid-column: 1/2;
     grid-row: 5/6;
 }
+*/
 
 
 /*footer positioning*/
@@ -165,29 +205,51 @@ header {
     justify-content: center;
 }
 
-ul li {
-    position:relative;
+.projectTitle {
     display:block;
-    list-style-type: none;
+    position: relative;
+    text-decoration: none;
+    font-style: italic;
+    font-size: larger;
+    border: 3px solid #8B5041;
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+    text-indent: 3%;
+    
 }
 
-/*makes all info in "a" tan when hovered over*/
-.projectInfo:hover {
-    background: tan;
-}
 
-/*hides dropdown when not hovered over*/
-.projectInfo {
+/*creates and places the dropdown triangle shape*/
+.projectTitle:before {
     position: absolute;
-    list-style-type: none;
-    display: none;
-    top: 100%;
+    content: " ";
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    height: 0;
+    font-size: 0;
+    left:7px;
+    bottom: 9px;
+    transition: 0.5s;
+    transform-origin: 3px;
 }
 
-/*displays dropdown and aligns dropdown text*/
-.projectInfo:hover {
+/*tells it to hide and show when clicked*/
+input:checked ~ label:before {
+    transform: rotate(90deg);  
+}
+
+input:checked ~ div {
+    padding: 10px;
     display:block;
-    text-align: center;
+    height: auto;
+
+}
+
+.projectinfo {
+    height: 0;
+    overflow: hidden;
 }
 
 
