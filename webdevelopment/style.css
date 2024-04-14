@@ -12,17 +12,7 @@
 
 h1{color:#8B5041;} 
 
-.resume {
-    text-decoration: none;
-    border: 5px solid #8B5041;
-    padding: 5px;
-    background:beige;
-    color: #8b5041;
-}
 
-.resume:hover {
-    background-color:tan;
-}
 
 body {
     display: flex;
@@ -67,13 +57,6 @@ p {
 
 /*end of big first letter and indent*/
 
-#Barnpic {
-    width:400px;
-}
-
-video {
-    width: 400px;
-}
 
 #footer {
     font-family: Book Antiqua;
@@ -103,74 +86,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-
-
-/*********about page grid layout***************/
-
-#wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 3fr 20fr 3fr 1fr 1fr;
-    grid-gap: 10px;
-    height: 1100px;  
-}
-
-nav {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 1/2;
-}
-
-header {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 2/3;
-}
-
-
-main {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 3/4;
-}
-
-#media {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 2/6;
-}
-
-#Barnpic2 {
-    display:none;
-}
-
-#video2 {
-    display:none;
-}
-
-#quote {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 4/5;
-    display: flex;
-    justify-content: center;
-}
-
-#author {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 5/6;
-    display: flex;
-    justify-content: center;
-
-}
-
-#footer {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 6/7;
-}
-
 #info {
     display: flex;
     justify-content: center;
@@ -181,102 +96,6 @@ main {
 }
 
 
-
-/**********responsive css for mobile navigation screens*******/
-
-@media all and (max-width: 872px) {
-
-     #wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 5fr 20fr 5fr 1fr 1fr 1fr;
-        grid-gap: 10px; 
-     }
-
-#hamburger {
-        display: block;
-        width: 26px;
-        float: left;
-        font-size: 2em;
-    }
-
-nav {
-    display: none;
-}
-
-header {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 2/3;
-    display: flex;
-    justify-content: center;
-}
-
-#media {
-    display:none;
-}
-
-/*I duplicated image and video below to easily rearrange for a one-column layout and just hid the #media id*/
-#Barnpic2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 3/4;
-    width: 200px;
-    display: block;
-    margin: auto;
-}
-
-main {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 4/5;
-}
-
-
-
-#video2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 5/6;
-    width: 200px;
-    display: block;
-    margin: auto;
-}
-
-
-#quote {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 6/7;
-    display: flex;
-    justify-content: center;
-}
-
-#author {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 7/8;
-    display: flex;
-    justify-content: center;
-
-}
-
-#footer {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row: 8/9;
-    font-size: 14px; 
-}
-
-#info {
-    display: flex;
-    justify-content: center;
-}
-#copyright {
-    display: flex;
-    justify-content: center;
-}
-}
 
 /*change in layout for printing purposes*/
 
