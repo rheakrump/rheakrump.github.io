@@ -15,9 +15,9 @@ input {
     display:none;
 }
 
+
 .projectTitle {
-    display:block;
-    position: relative;
+    display: block;
     text-decoration: none;
     font-style: italic;
     font-size: larger;
@@ -28,7 +28,6 @@ input {
 
 
 
-
 /*project link formatting*/
 #VODlink {
     text-decoration: none;
@@ -36,7 +35,11 @@ input {
     padding: 5px;
     background:beige;
     color: #8b5041;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
+    
+    
 }
 
 #VODlink:hover {
@@ -49,7 +52,9 @@ input {
     padding: 5px;
     background:beige;
     color: #8b5041;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
 }
 
 #Motherlink:hover {
@@ -62,7 +67,9 @@ input {
     padding: 5px;
     background:beige;
     color: #8b5041;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
 }
 
 #Summerlink:hover {
@@ -73,17 +80,24 @@ input {
 /*image formatting*/
 #VODpic {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+
 }
 
 #Giannapic {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
+    display: block;
+    margin: auto;
 }
 
 #Summerpic {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
+    display: block;
+    margin: auto;
 }
 
 
@@ -99,6 +113,7 @@ input {
     grid-template-rows: 1fr 1fr 5fr 5fr 5fr 2fr;
     grid-gap: 10px;
     height: 1100px;  
+  
 }
 
 nav {
@@ -111,49 +126,25 @@ header {
     grid-row: 2/3;
 }
 
+
+
 main {
     grid-column: 2/3;
     grid-row: 3/6;
+    
 }
 
-#media {
+.media {
     grid-column: 1/2;
     grid-row: 3/6;
 }
 
-/*
-#VODinfo {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-#VODmedia {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
 
 
-#Motherinfo {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-
-#Mothermedia {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
 
 
-#Summerinfo {
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
 
-#Summermedia {
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-*/
+
 
 
 /*footer positioning*/
@@ -179,7 +170,7 @@ main {
 
 @media all and (max-width: 872px) {
 
-     #wrapper {
+#wrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 5fr 20fr 5fr 1fr 1fr 1fr;
@@ -199,7 +190,7 @@ nav {
 
 header {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
