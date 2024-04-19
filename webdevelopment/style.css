@@ -3,6 +3,45 @@
     src: url("Roboto/Roboto-Regular.ttf");
 }
 
+/*table styling*/
+table {
+    width: 700px;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: beige;
+}
+
+
+tr:nth-child(1) {
+    background-color: pink;
+}
+
+tr:nth-child(2) {
+    background-color: beige;
+}
+
+tr:nth-child(3) {
+    background-color: pink;
+}
+
+
+/*table styling done*/
+
 .favicon {
     height:16px;
     width: 16px;
