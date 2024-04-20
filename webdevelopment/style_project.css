@@ -106,9 +106,6 @@ input {
 
 
 
-
-
-
 /*********project page grid layout***************/
 
 #wrapper {
@@ -116,7 +113,7 @@ input {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 5fr 2fr;
     grid-gap: 10px;
-    height: 1100px; 
+    height: 100vh; 
     
    
   
@@ -139,15 +136,6 @@ main {
     grid-row: 3/4;
     
 }
-
-
-
-
-
-
-
-
-
 
 
 /*footer positioning*/
@@ -178,6 +166,7 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 5fr 20fr 5fr 1fr 1fr 1fr;
         grid-gap: 10px; 
+        height: 100vh;
      }
 
 #hamburger {

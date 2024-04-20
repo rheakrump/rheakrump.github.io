@@ -1,0 +1,147 @@
+/*********about page grid layout***************/
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20fr 2fr;
+    grid-gap: 10px;
+    height:100vh;
+}
+
+nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+form {
+    width: 500px;
+}
+
+.form {
+    margin: 20px 20px 20px 30px;  
+    font-family: Book Antiqua;
+}
+
+form {
+    border: solid #8B5041;
+    text-align: left;
+}
+
+.box {
+    padding: 10px;
+}
+
+label{
+    display: inline-block;
+    clear: left;
+    width: 100px;
+
+}
+input {
+  display: inline-block;
+  width: 200px;
+}
+
+textarea {
+    width: 200px;
+}
+
+#send {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+
+
+
+main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+#footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+}
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/**********responsive css for mobile navigation screens*******/
+
+@media all and (max-width: 872px) {
+
+#wrapper {
+        display: grid;
+        height: 100vh;
+     }
+
+#hamburger {
+        display: block;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+    }
+
+form {
+    width: 250px;
+    border: solid #8B5041;
+    text-align: left;
+}
+
+
+.form {
+    margin: 20px 20px 20px 30px;  
+    font-family: Book Antiqua;
+}
+
+
+.box {
+    padding: 10px;
+}
+
+label{
+    display: inline-block;
+    clear: left;
+
+}
+input {
+  display: inline-block;
+  
+}
+
+
+
+#send {
+    margin: 5px;
+    padding: 5px;
+ 
+}
+
+
+#footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 14px; 
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+}
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+}

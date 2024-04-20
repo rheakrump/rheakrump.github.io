@@ -1,5 +1,4 @@
 .form {
-    width:200px;
     margin: 20px 20px 20px 30px;  
     font-family: Book Antiqua;
 }
@@ -7,4 +6,29 @@
 form {
     border: solid #8B5041;
     text-align: left;
+}
+
+.box {
+    padding: 10px;
+}
+
+label{
+    display: inline-block;
+    clear: left;
+    width: 100px;
+
+}
+input {
+  display: inline-block;
+  width: 200px;
+}
+
+textarea {
+    width: 200px;
+}
+
+#send {
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
 }
