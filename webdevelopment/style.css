@@ -161,6 +161,14 @@ footer {
 }
 
 
+/**********responsive css for mobile navigation screens*******/
+
+@media all and (max-width: 872px) {
+nav {
+    display: none;
+}
+}
+
 
 /*change in layout for printing purposes*/
 

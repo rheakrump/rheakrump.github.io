@@ -1,0 +1,10 @@
+.form {
+    width:200px;
+    margin: 20px 20px 20px 30px;  
+    font-family: Book Antiqua;
+}
+
+form {
+    border: solid #8B5041;
+    text-align: left;
+}
