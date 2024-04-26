@@ -9,6 +9,44 @@ h3 {
 }
 
 
+/*table styling*/
+table {
+    width: 700px;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #c5a7a0;
+}
+
+
+tr:nth-child(1) {
+    background-color: #e7dcd9;
+}
+
+tr:nth-child(2) {
+    background-color: #f3edec;
+}
+
+tr:nth-child(3) {
+    background-color:#e7dcd9;
+}
+
+/*table styling done*/
+
 /*expandable text sections*/
 
 
@@ -170,23 +208,29 @@ main {
      }
 
 #hamburger {
+    grid-column: 1/2;
+    grid-row: 1/2;
         display: block;
         width: 26px;
         float: left;
         font-size: 2em;
     }
 
-nav {
-    display: none;
-}
 
 header {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
 }
+
+
+main {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
 
 .projectTitle {
     display:block;
@@ -235,9 +279,29 @@ input:checked ~ div {
     overflow: hidden;
 }
 
-#table {
-    overflow: scroll;
+
+/*table styling*/
+table {
+    width: 200px;
+    border-spacing: 0px;
+    margin: auto;
 }
 
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 3px;
+}
+
+
+
+/* took out because not necessary...?
+#table {
+    overflow: scroll;
+} */
+
+/*table styling done*/
 
 }

@@ -29,7 +29,7 @@ video {
     height: 950px;  
 }
 
-nav {
+.desktopnav {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row: 1/2;
@@ -114,9 +114,6 @@ main {
         font-size: 2em;
     }
 
-nav {
-    display: none;
-}
 
 header {
     grid-column-start: 1;

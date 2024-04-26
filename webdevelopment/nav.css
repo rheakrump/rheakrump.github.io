@@ -7,8 +7,12 @@ nav {
     top: 0px;
 }
 
+.mobilenav {
+    display: none;
+}
+
 /*navigation bar position and color*/
-nav ul {
+.desktopnav ul {
     list-style-type: none;
     margin: 0;
     padding: 3px;
@@ -69,7 +73,7 @@ nav li:hover .dropdown {
 
 
 /*navigation bar position and color*/
-nav ul, nav:active ul {
+nav ul, .desktopnav:active ul {
     display: none;
     position: absolute;
     margin: 0;
@@ -77,7 +81,7 @@ nav ul, nav:active ul {
     top: 20px;   
 }
 
-nav:hover ul {
+.desktopnav:hover ul {
     display: block;
     width: 200px;
     text-align: left;
@@ -86,7 +90,7 @@ nav:hover ul {
 
 }
 
-nav:hover .dropdown {
+.desktopnav:hover .dropdown {
     display: none;
     z-index: 150;
     padding: 0;
@@ -96,7 +100,7 @@ nav:hover .dropdown {
 
 
 /*select all list items (nav and dropdown) and all "a" factors in there*/
-nav li a {
+.desktopnav li a {
     display:block;
     text-decoration: none;
     margin: 2px 2px 2px 2px;
@@ -106,12 +110,12 @@ nav li a {
     text-align:center;
 }
 
-nav .lastMobile {
+.desktopnav .lastMobile {
     border-bottom: 3px dotted beige;
     width: 210px;
 }
 
-nav ul li ul {
+.desktopnav ul li ul {
     display: none;
 }
 

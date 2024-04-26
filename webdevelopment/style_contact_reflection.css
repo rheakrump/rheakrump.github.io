@@ -13,7 +13,9 @@ nav {
     grid-row: 1/2;
 }
 
-
+.mobilenav {
+    display: none;
+}
 form {
     width: 500px;
 }
@@ -82,17 +84,63 @@ main {
 
 @media all and (max-width: 872px) {
 
-#wrapper {
+    #wrapper {
         display: grid;
         height: 100vh;
      }
 
+     
 #hamburger {
         display: block;
         width: 26px;
         float: left;
         font-size: 2em;
     }
+
+
+    
+    /*navigation bar position and color*/
+    .mobilenav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 20px;   
+    }
+    
+    .mobilenav:hover ul {
+        display: block;
+        width: 200px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    
+    
+    
+    
+    /*select all list items (nav and dropdown) and all "a" factors in there*/
+    .mobilenav li a {
+        display:block;
+        text-decoration: none;
+        margin: 2px 2px 2px 2px;
+        padding: 10px;
+        color: beige;
+        text-transform: uppercase;
+        text-align:center;
+    }
+    
+    .mobilenav .lastMobile {
+        border-bottom: 3px dotted beige;
+        width: 210px;
+    }
+    
+    .mobilenav ul li ul {
+        display: none;
+    }
+    
 
 form {
     width: 250px;
@@ -145,3 +193,5 @@ input {
     justify-content: center;
 }
 }
+
+
