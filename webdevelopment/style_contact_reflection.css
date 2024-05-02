@@ -21,7 +21,7 @@ nav {
     display: none;
 }
 form {
-    width: 500px;
+    width: 700px;
 }
 
 .form {
@@ -46,11 +46,11 @@ label{
 }
 input {
   display: inline-block;
-  width: 200px;
+  width: 280px;
 }
 
 textarea {
-    width: 200px;
+    width: 280px;
 }
 
 #send {
@@ -147,7 +147,7 @@ main {
     
 
 form {
-    width: 250px;
+    width: 300px;
     border: solid #8B5041;
     text-align: left;
 }

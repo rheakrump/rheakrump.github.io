@@ -1,3 +1,24 @@
+/*quote background image for homepage*/
+#tolkien {
+    font-family: Book Antiqua;
+    color: #000026;
+    margin: 0px;
+    padding: 20px;
+    font-size: 28px;
+    background-image: url(Home_pic.jpg);
+    background-repeat: no-repeat;
+    width:screen;
+    height:275px;
+    display: block;
+    text-align: center;
+}
+
+#homepic {
+    display: block;
+    text-align: left;
+}
+
+
 /*********about page grid layout***************/
 
 #wrapper {
